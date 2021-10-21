@@ -1,0 +1,19 @@
+.movies {
+      display: flex;
+      overflow: scroll;
+      &::-webkit-scroll-bar {
+            display: none;
+      }
+      .movie {
+            margin: 10px;
+            img {
+                  border-radius: 10px ;
+                  max-width: 300px;
+                  max-height: 200px;
+            }
+            .large {
+                  max-height: 300px;
+                  max-width: 200px;
+            }
+      }
+}
