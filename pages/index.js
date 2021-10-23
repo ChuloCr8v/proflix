@@ -1,5 +1,6 @@
 import styles from "../styles/Home.module.css";
 import Row from "../components/Row";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import requests from "../components/requests";
 
@@ -18,6 +19,7 @@ export default function Home() {
       <Row title={"Horror"} fetchUrl={requests.fetchHorrorMovies} />
       <Row title={"Romance"} fetchUrl={requests.fetchRomanceMovies} />
       <Row title={"Documentaries"} fetchUrl={requests.fetchDocumentaries} />
+      <Footer />
     </div>
   );
 }
