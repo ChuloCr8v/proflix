@@ -1,0 +1,15 @@
+.no__trailer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  p {
+    text-align: center;
+    font-size: calc(13px + 0.5vh);
+  }
+  img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin: 0 auto;
+  }
+}

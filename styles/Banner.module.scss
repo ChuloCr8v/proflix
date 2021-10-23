@@ -1,23 +1,58 @@
 .banner {
-      overflow: hidden;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      background: black ;
-      &::before {
-            content: '';
-            position: absolute;
-            height: 100vh;
-            width: 100vw;
-            background: linear-gradient(#000000, transparent, rgb(0,0,0));;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(#000000, rgb(0, 0, 0, 0.5), rgb(0, 0, 0));
+  }
+  .movie {
+    padding: 20px;
+    .details {
+      position: relative;
+      z-index: 50;
+      .title {
+        color: goldenrod;
+        font-size: calc(3rem + 1vh);
+        margin-bottom: 0;
       }
-      .movie {
-            img {
-                  min-height: 100vh;
-                  max-width: 130vw;
-                  margin: auto 0;
-            }
+      .movie_desc {
+        font-size: calc(16px + 0.5vh);
+        font-weight: 500;
       }
+      a {
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+        border: none;
+        font-size: 16px;
+        padding: 5px 10px;
+        border: 2px gold solid;
+        background: gold;
+        transition: all 0.3s ease;
+        &:hover {
+          background: transparent;
+          color: gold;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .banner {
+    .movie {
+      .details {
+        max-width: 60%;
+      }
+    }
+  }
 }

@@ -1,0 +1,50 @@
+.toast {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  animation: up 0.4s ease-in-out alternate;
+  padding: 20px;
+  z-index: 100;
+  a {
+    font-size: 13px;
+    background: red;
+    padding: 5px 10px;
+    border: 2px red solid;
+    color: white;
+    transition: all 0.3s;
+    text-align: center;
+    width: calc(100% - 5vh);
+    margin: 50px auto;
+    text-decoration: none;
+    &:hover {
+      background: #000;
+    }
+  }
+  h1 {
+    font-size: calc(25px + 0.5vh);
+    color: gold;
+    text-align: left;
+  }
+  p {
+    font-size: calc(13px + 0.5vh);
+    span {
+      color: red;
+      font-weight: 900;
+    }
+  }
+  .youtube {
+    border: 2px red solid;
+    margin: 50px 0;
+    padding: 10px;
+  }
+}
+
+@keyframes up {
+  0% {
+    transform: translateY(100vh);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
